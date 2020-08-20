@@ -1,0 +1,44 @@
+$color1 :#303952;
+$color2 : #596275;
+$color3 :  #d2dae2 ;
+$color4 : #808e9b;
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    grid-gap: 5px;
+    border-radius: 40px;
+    margin: 20px 50px;
+    border: .1px solid $color4;
+    .img_side{
+        .project-img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .info_side{
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $color2;
+        }
+        h2{
+            color: $color1;
+        }
+        .project_desc{
+            font-size: 18px;
+            width: 80%;
+        }
+        .project_techs{
+            font-size: 20px;
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .project{
+        grid-template-columns: 1fr;
+        margin: 20px 5px;
+    }
+}

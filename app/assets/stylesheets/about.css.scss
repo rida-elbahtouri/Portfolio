@@ -1,0 +1,39 @@
+$color1 :#303952;
+$color2 : #596275;
+$color3 :  #d2dae2 ;
+$color4 : #808e9b;
+.bold{
+    font-weight: bold;
+}
+
+.about {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    a{
+        color:$color3 ;
+        text-decoration: none;
+        border: .1px solid $color3;
+        background-color: $color4;
+        padding: 5px;
+        border-radius: 5px;
+        
+    }
+    a:hover{
+        color:$color2 ;
+        background-color: $color4;
+    }
+}
+.skill_title{
+    display: block;
+    font-size: 18px;
+    
+}
+@media only screen and (max-width: 800px) {
+    .about{
+        grid-template-columns: 1fr;
+    }
+}

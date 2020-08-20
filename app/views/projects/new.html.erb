@@ -1,0 +1,15 @@
+<%= form_for @project do |f| %>
+<%= f.label :name, "Name" %> <br>
+<%= f.text_field :name %><br>
+<%= f.label :content, "Content" %> <br>
+ <%= f.text_area :content %><br>
+ <%= f.label :img, "Image" %> <br>
+ <%= f.text_field :img %><br>
+ <%= f.label :techs, "Techs" %> <br>
+ <%= f.text_field :techs %><br>
+ <%= f.label :repo, "Repo" %> <br>
+ <%= f.text_field :repo %><br>
+ <%= f.label :live_version, "Live version" %> <br>
+ <%= f.text_field :live_version %><br>
+ <%= f.submit "create"%>
+<% end %>

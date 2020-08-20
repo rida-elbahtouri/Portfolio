@@ -1,0 +1,59 @@
+$color1 :#303952;
+$color2 : #596275;
+$color3 :  #d2dae2 ;
+$color4 : #808e9b;
+body{
+    padding: 0;
+    margin: 0;
+    color:$color1;
+    background-color: $color3;
+}
+.container{
+    padding: 20px 30px;
+}
+.header{
+    
+    min-height:500px ;
+    position: relative;
+    background-image: url("header.jpg");
+    background-position: center;
+    background-size: cover;
+    border-bottom-right-radius: 60px;
+    header{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        p{
+            width: 70%;
+            color: $color1;
+        }
+    }
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between; 
+    a{
+        color:$color1 ;
+        text-decoration: none;
+    }
+    a:hover{
+        color:$color4 ;
+    }
+
+}
+.right_nav{
+    a{
+        margin-left: 10px;
+    }
+}
+.links_contac{
+    a{
+      color: $color2;  
+    }
+    a:hover{
+        color: $color4;
+    }
+    
+}
