@@ -11,11 +11,11 @@ const showotherskills = document.getElementById('showotherskill')
 
 const showHide = (elm,id)=>{
     const arrows = document.getElementById(id)
-     if (elm.style.display==='block'){
-        elm.style.display='none'
+     if (elm.className==='block'){
+        elm.className='none'
         arrows.classList.remove('rotate')
     }else{
-        elm.style.display='block'
+        elm.className='block'
         arrows.classList.add('rotate')
     }
     

@@ -17,18 +17,21 @@ $color4 : #808e9b;
         color:$color3 ;
         text-decoration: none;
         border: .1px solid $color3;
-        background-color: $color4;
+        background-color: #091e42;;
         padding: 5px;
         border-radius: 5px;
         
     }
     a:hover{
-        color:$color2 ;
-        background-color: $color4;
+        color:#091e42 ;
+        background-color: $color3 ;
     }
 }
 .none {
     display: none;
+}
+.display {
+    display: block;
 }
 .skill_title{
     display: block;
@@ -39,8 +42,27 @@ $color4 : #808e9b;
 }
 .rotate {
     transform: rotate(90deg);
-    animation-delay: 1s;
+    animation-name: Rotate;
+    animation-duration: 800ms;
 }
+
+@keyframes Rotate {
+    0% {
+      opacity: 0;
+     transform: rotate(0deg);
+    }
+  
+    80% {
+      transform: rotate(92deg);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: rotate(90deg);
+    }
+  }
+
+
 @media only screen and (max-width: 800px) {
     .about{
         grid-template-columns: 1fr;
