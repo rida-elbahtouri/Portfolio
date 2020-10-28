@@ -85,8 +85,18 @@ body {
   .header {
     width: 100%;
     padding: 5px;
+    min-height: 500px;
     box-sizing: border-box;
     overflow-x: hidden;
+    header {
+      h1 {
+        font-size: 22px;
+      }
+    p {
+      font-size: 18px;
+      width: 100%;
+      line-height: 20px;
+    }}
   }
   .container{
     width: 100%;
@@ -95,7 +105,7 @@ body {
   }
 .nav_bar {
   a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 }
