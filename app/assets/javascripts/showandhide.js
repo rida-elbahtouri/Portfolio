@@ -1,16 +1,16 @@
 document.addEventListener("turbolinks:load", function() {
 
-const frontskill = document.getElementById('frontskills')
-const showfront = document.getElementById('showfrontskill')
-const backskill = document.getElementById('backendskills')
-const showbackend = document.getElementById('showbackendskill')
-const otherskills = document.getElementById('otherskills')
-const showotherskills = document.getElementById('showotherskill')
+let frontskill = document.getElementById('frontskills')
+let showfront = document.getElementById('showfrontskill')
+let backskill = document.getElementById('backendskills')
+let showbackend = document.getElementById('showbackendskill')
+let otherskills = document.getElementById('otherskills')
+let showotherskills = document.getElementById('showotherskill')
 
 
 
-const showHide = (elm,id)=>{
-    const arrows = document.getElementById(id)
+function showHide(elm,id){
+    let arrows = document.getElementById(id)
      if (elm.className==='block'){
         elm.className='none'
         arrows.classList.remove('rotate')
@@ -20,13 +20,13 @@ const showHide = (elm,id)=>{
     }
     
 }
-showfront.addEventListener('click',()=>{
+showfront.addEventListener('click',function(){
     showHide(frontskill,'0')
 })
-showbackend.addEventListener('click',()=>{
+showbackend.addEventListener('click',function(){
     showHide(backskill,'1')
 })
-showotherskills.addEventListener('click',()=>{
+showotherskills.addEventListener('click',function(){
     showHide(otherskills,'2')
 })
 //end of container function
