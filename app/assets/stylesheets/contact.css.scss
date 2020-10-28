@@ -28,3 +28,31 @@
     }
     
 }
+@media only screen and (max-width: 500px) {
+    .contact_form{
+        position: absolute;
+        left: 50%;
+        width: 80%;
+        transform: translateX(-50%);
+        input{
+            margin: 10px 0;
+        }
+        .input{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        label{
+            margin-bottom: 10px;
+        }
+        textarea{
+            width: 100%;
+            outline: none;
+            resize: none;
+            height: 150px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+        
+    }
+}
