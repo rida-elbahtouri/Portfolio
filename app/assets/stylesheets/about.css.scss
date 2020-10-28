@@ -27,10 +27,19 @@ $color4 : #808e9b;
         background-color: $color4;
     }
 }
+.none {
+    display: none;
+}
 .skill_title{
     display: block;
     font-size: 18px;
-    
+    cursor: pointer;
+    border-bottom:1px solid $color4 ;
+    padding: 5px 0;
+}
+.rotate {
+    transform: rotate(90deg);
+    animation-delay: 1s;
 }
 @media only screen and (max-width: 800px) {
     .about{
