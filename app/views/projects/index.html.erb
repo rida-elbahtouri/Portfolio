@@ -31,9 +31,14 @@
         <div class="info_side">
             <h2><%= project.name%></h2>
             <p class="project_desc"><%= project.content%></p>
-            <p class="project_techs"><%=project.techs%></p>
-            <a target="_blank" href=<%= project.repo %>><i class="fab fa-github"></i>Project repo</a>
-            <a target="_blank" href=<%= project.live_version %>><i class="fas fa-link"></i>Live version</a>
+            <p class="project_techs">
+            <% project.techs.split(',', -1).each do |skill| %>
+                <span class="skillsused"> <%= skill %> </span>
+            <% end %>
+    
+            </p>
+            <a target="_blank" href=<%= project.repo %>><i class="fab fa-github"></i><span class="links">Project repo</span> </a>
+            <a target="_blank" href=<%= project.live_version %>><i class="fas fa-link"><span class="links"></i>Live version</span></a>
         </div>
     </div>
     <% end %>
