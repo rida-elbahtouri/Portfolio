@@ -15,13 +15,6 @@ class ProjectsController < ApplicationController
     def index
         @projects=Project.all
         @email = Email.new()
-
-        @frontskill = [
-            {:skill=> "JavaScript",:img=>".skills/js.jpeg"},
-            {:skill => "ReactJs",:img =>"header.jpg"}
-        ]
-
-
     end
 
     private
