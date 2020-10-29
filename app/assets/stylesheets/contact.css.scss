@@ -1,6 +1,13 @@
 .contact{
     padding: 40px;
     position: relative;
+    background-color: #6070FF;
+    background-image: url('contact.svg');
+    min-height: 400px;
+}
+.bg-contact{
+    background-color:#6070FF ;
+    border-top-left-radius: 60px;
 }
 .contact_form{
     position: absolute;
@@ -26,9 +33,26 @@
         box-sizing: border-box;
         margin: 10px 0;
     }
-    
+    .submit{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+
+        padding: 10px 30px;
+        font-size: 18px;
+        color: #6070FF;
+        border: none;
+        border: 1px solid white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .submit:hover {
+        background-color: #6070FF;
+        color: white;
+        border: 1px solid white;
+    }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
     .contact_form{
         width: 80%;
     }

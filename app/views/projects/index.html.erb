@@ -43,7 +43,7 @@
     </div>
     <% end %>
 </div>
-
+<div class='bg-contact'>
 <div id="about" class="about container">
     <div class="myinfo container">
         <h1>About me</h1>
@@ -70,8 +70,8 @@
     <%= f.text_field :email,class:"input" %><br>
     <%= f.label :message, "Message" %> <br>
     <%= f.text_area :message, placeholder: "write your message here ..." %><br>
-    <%= f.submit "Send"%>
+    <%= f.submit "Send" , class: 'submit'%>
     <% end %>
 </div>
-
+<div>
 <% javascript_path 'showandhide' %>
