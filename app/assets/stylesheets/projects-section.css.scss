@@ -29,7 +29,7 @@ color: #6070FF;
         a{
             color: inherit;
             text-decoration: none;
-            border: 3px #6070FF solid;
+            border: 1px #6070FF solid;
             padding:10px;
             margin-right:5px ;
             border-radius: 10px;
@@ -37,7 +37,6 @@ color: #6070FF;
         .links {
             display: inline-block;
             margin-left: 10px;
-
         }
 
         a:hover{
@@ -62,11 +61,12 @@ color: #6070FF;
         grid-template-columns: 1fr;
         margin: 20px 5px;
     }
+   
 }
 
 @media only screen and (max-width: 1000px) {
     .project{
-        margin:20px;
+        margin:20px 5px;
     }
 
 }
